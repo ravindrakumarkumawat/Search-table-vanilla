@@ -90,16 +90,12 @@ const columns = [
   }
 
   const confirmUser = () => {
-    debugger
     if(filteredData.length > 0) {
-      setFilteredData([...filteredData.map((d) => d.id !== viewData.id)])
-      setViewData({})
-      setIsDeleteUser(false)
-    } else if(data.length > 0) {
-      setData([...data.map((d) => d.id !== viewData.id)])
-      setViewData({})
-      setIsDeleteUser(false)
+      setFilteredData([...filteredData.filter((d) => d.id !== viewData.id)])
     }
+    setData([...data.filter((d) => d.id !== viewData.id)])
+    setViewData({})
+    setIsDeleteUser(false)
   }
 
   const cancelUser = () => {
