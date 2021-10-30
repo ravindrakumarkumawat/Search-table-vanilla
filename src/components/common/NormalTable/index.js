@@ -1,4 +1,5 @@
 import React from "react";
+import NormalButton from "../NormalButton";
 
 const NormalTable = ({ datasource, columns, viewUser, deleteUser }) => {
   return (
@@ -17,15 +18,9 @@ const NormalTable = ({ datasource, columns, viewUser, deleteUser }) => {
               <td>{d.phone}</td>
               <td>{d.address ? d.address.street : ""}</td>
               <td>
-                <button className="view-btn btn" onClick={() => viewUser(d)}>
-                  View
-                </button>
-                <button
-                  className="delete-btn btn"
-                  onClick={() => deleteUser(d)}
-                >
-                  Delete
-                </button>
+                <NormalButton btntype={"primary"} name={"View"} handleAction={viewUser} selected={d}/>
+                <span className="gap-2"/>
+                <NormalButton name={"Delete"} handleAction={deleteUser} selected={d}/>
               </td>
             </tr>
           ))}
