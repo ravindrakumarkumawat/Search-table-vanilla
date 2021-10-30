@@ -121,3 +121,11 @@ input[type=text] {
 .gap-2 {
   padding: 0 .5rem;
 }
+
+.right {
+  display: flex;
+  justify-content: end;
+}
+.actions-btn {
+  display: flex;
+}

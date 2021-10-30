@@ -17,7 +17,7 @@ const NormalTable = ({ datasource, columns, viewUser, deleteUser }) => {
               <td>{d.email}</td>
               <td>{d.phone}</td>
               <td>{d.address ? d.address.street : ""}</td>
-              <td>
+              <td className="actions-btn">
                 <NormalButton btntype={"primary"} name={"View"} handleAction={viewUser} selected={d}/>
                 <span className="gap-2"/>
                 <NormalButton name={"Delete"} handleAction={deleteUser} selected={d}/>

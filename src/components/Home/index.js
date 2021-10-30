@@ -5,6 +5,7 @@ import NormalCol from "../common/NormalCol";
 import NormalText from "../common/NormalText";
 import "./Home.css";
 import NormalInput from "../common/NormalInput";
+import NormalButton from "../common/NormalButton";
 
 const columns = [
   {
@@ -131,9 +132,13 @@ const columns = [
       <div id="view-modal" className={`view-container ${isSelectedUser ? 'view-container-show' : 'view-container-hide'}`}>
         {/*<!-- Modal -->*/}
         <div className="view-content-container">
-          <button id="view-close" className="btn" onClick={closeViewUser}>
-            Close
-          </button>
+          <NormalRow>
+            <NormalCol span={24}>
+              <div className="right">
+                <NormalButton name={'X'} handleAction={closeViewUser}/>           
+              </div>              
+            </NormalCol>
+          </NormalRow>
           <div className="content">
           <NormalRow>
           <NormalCol span={12}>

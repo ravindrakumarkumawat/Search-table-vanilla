@@ -1,4 +1,5 @@
 .btn {
+  display: block;
   cursor: pointer;
   border: 1px solid #f2f2f2;
   background-color: rgb(255, 255, 255);
@@ -14,6 +15,7 @@
 }
 
 .primary {
+  display: block;
   cursor: pointer;
   border: 1px solid #f2f2f2;
   background-color: rgb(96, 96, 216);  
