@@ -148,7 +148,7 @@ const columns = [
             <NormalText title={"Username"} subtitle={viewData.username} />
           </NormalCol>
         </NormalRow>
-        <NormalRow marginTop={".75rem"}>
+        <NormalRow classNames={"mt"}>
           <NormalCol span={12}>
             <NormalText title={"Email"} subtitle={viewData.email} />
           </NormalCol>
@@ -162,7 +162,7 @@ const columns = [
             <NormalText title={"Address"} />
           </NormalCol>
         </NormalRow>
-        <NormalRow marginTop={".75rem"}>
+        <NormalRow classNames={"mt"}>
           <NormalCol span={6}>
             <NormalText
               title={"Suite"}
@@ -206,7 +206,7 @@ const columns = [
             <NormalText title={"Website"} subtitle={viewData.website} />
           </NormalCol>
         </NormalRow>
-        <NormalRow marginTop={".75rem"}>
+        <NormalRow classNames={"mt"}>
           <NormalCol span={24}>
             <NormalText
               title={"Catch phrase"}
@@ -214,7 +214,7 @@ const columns = [
             />
           </NormalCol>
         </NormalRow>
-        <NormalRow marginTop={".5rem"}>
+        <NormalRow classNames={"mt"}>
           <NormalCol span={24}>
             <NormalText
               title={"BS"}
