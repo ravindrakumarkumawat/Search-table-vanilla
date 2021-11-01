@@ -2,13 +2,16 @@ import React from 'react'
 
 const NormalInput = ({
   value,
-  onChange
+  onChange,
+  type="text",
+  placehoder
 }) => {
   return (
     <input
+      value={value}
       id="search"
-      type="text"
-      placeholder="Search"
+      type={type}
+      placeholder={placehoder}
       onChange={(e) => onChange(e.target.value)}
     />
   )

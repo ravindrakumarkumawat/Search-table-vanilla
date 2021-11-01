@@ -106,9 +106,9 @@ const columns = [
 
   return (
     <div>
-      <NormalRow marginTop="2rem">
+      <NormalRow classNames={"mt-2"}>
         <NormalCol span={6}>
-          <NormalInput onChange={search} />
+          <NormalInput placehoder={'Search'} onChange={search} />
         </NormalCol>
       </NormalRow>
 
