@@ -115,7 +115,7 @@ const columns = [
       <div className="row">
         <div className="col">
           {/*<!-- Table container -->*/}
-          <div className="table-container" style={{ overflowX: "auto" }}>
+          <div className="table-container">
             <NormalTable 
               datasource={filteredData.length > 0 ? filteredData : data}
               columns={columns}

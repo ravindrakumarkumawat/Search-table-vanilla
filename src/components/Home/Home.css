@@ -37,6 +37,7 @@
   margin-top: 2rem;
   overflow-y: auto;
   height: 70vh;
+  overflow-x: auto;
 }
 .table-container thead th {
   position: sticky;
